@@ -36,3 +36,4 @@
 
 ## CONFIGURACION AVANZADA DE PROYECTOS FREESTYLE
 - Párametros en Jobs (ejemplo: seleccion de ramas)
+- Uso de variables de entorno
