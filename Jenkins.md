@@ -1,4 +1,6 @@
-# JOBS
+# NIVEL BASICO: Conceptos iniciales
+
+## JOBS
 - Es una tarea automatizada -> Servidor Jenkins
     - Podria compilar
     - Ejecutar pruebas
@@ -10,7 +12,7 @@
     - Multibranch pipeline -> Ideal para proyectos en git con varias ramas
     - Maven Projet -> Para proyectos maven
 
-# BUILDS
+## BUILDS
 - Es una ejecucion de un Job
 - Cada vez que se haga una ejecucion se va a generar un build
     - Obtener el codigo fuente
@@ -19,8 +21,18 @@
     - Guarda los artefactos (Opcional)
     - Muestra el resultado del build en el interfaz
 
-# DISPARADORES AUTOMATICOS
+## DISPARADORES AUTOMATICOS
 - Polling SCM -> Revisar periodicamente si hay cambios en el repo de Github
 - Webhook -> Relacionado con Github, Gitlab, Bitbucket, dispara un job cuando hay un cambio en el codigo
 - Programacion cron -> Se ejecuta un Job en intervalos especificos
 - Disparo por otro Job -> Un Job podria ejecutar otro Job cuando termine
+
+## Plugins
+- Son extenciones que se añaden a jenkins
+- Y ello nos trae nuevas funcionalidades
+- Plugins escenciales. Git Plugin, Maven Integration, Email extension
+
+# NIVEL INTERMEDIO: Automatizacion y flujos de trabajo
+
+## CONFIGURACION AVANZADA DE PROYECTOS FREESTYLE
+- Párametros en Jobs (ejemplo: seleccion de ramas)
