@@ -37,3 +37,8 @@
 ## CONFIGURACION AVANZADA DE PROYECTOS FREESTYLE
 - Párametros en Jobs (ejemplo: seleccion de ramas)
 - Uso de variables de entorno
+    - BUILD_NUMBER: Numero de build actual
+    - JOB_NAME: Nombre del Job que estas ejecutando
+    - WORKSPACE: Directorio donde jenkins alamcena los archivos del job
+    - GIT_COMMIT: Hash del commit si el job usa git
+- Ejecucion de scripts en Bash, PowerShell o Python
