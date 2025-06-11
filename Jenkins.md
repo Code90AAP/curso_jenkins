@@ -49,3 +49,8 @@
 - Conexion con GitHub
 - Configuracion de webhooks para disparadores automaticos
 - Manejos de multiples ramas y pull requests
+
+## AUTOMATIZACION DE PRUEBAS
+- Integracion con herramientas de pruebas (JUnit, Selenium, pytest)
+- Generacion de reportes de resultados
+- Fallos condicionales: Que hacer si las pruebas fallan
