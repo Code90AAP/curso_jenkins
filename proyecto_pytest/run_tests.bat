@@ -2,7 +2,6 @@
 cd /d %~dp0
 
 cd ..
-
 cd proyecto_pytest
 
 :: Crear entorno virtual si no existe
@@ -20,5 +19,10 @@ if exist requirements.txt (
     pip install -r requirements.txt
 )
 
-:: Ejecutar pruebas
-pytest
+:: Crear carpeta para reportes si no existe
+if not exist reports (
+    mkdir reports
+)
+
+:: Ejecutar pruebas y generar reportes
+pytest tests/ --junitxml=reports/test_results.xml --html=reports/test_results.html --self-contained-html || exit /b 1
